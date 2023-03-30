@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+
+<link rel="shortcut icon" type="image/png" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="shortcut icon" sizes="192x192" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="apple-touch-icon" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+
+<script src="https://kit.fontawesome.com/256c714d9a.js"></script>
+<link
+  href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata|Karla|Rubik&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.2/report/index.css" />
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.2/report/tailwind.css" />
+<script>
+  // analytics config
+  // TODO -- pass these in as props for consistency?
+  window.dpAppRunner = "False" === "True";
+  window.dpLocal = true;
+    window.dpLocalViewEvent = true;
+    window.dpReportId = "0e608b33cd8d4c1c876433d214c4c191";
+    window.dpAuthorId = "40d64a1c69d04a0cb9fcd93e977a328c";
+
+  /* construct the view */
+  const htmlHeader = `<style type="text/css">:root {
+    --dp-accent-color: #4E46E5;
+    --dp-bg-color: #FFF;
+    --dp-text-align: justify;
+    --dp-font-family: Inter var, ui-sans-serif, system-ui;
+}</style>`;
+  window.reportProps = { htmlHeader, isLightProse: false, isOrg: false, mode: "VIEW", reportWidthClass: "max-w-screen-xl" };
+
+  if (!window.dpAppRunner) {
+      // pass app data via props if in local (static) mode, otherwise this data is fetched from the server
+      window.reportProps["appData"] = { data: { result: {"view_xml": "\u003cView version=\"1\" fragment=\"false\"\u003e\u003cText\u003e\u003c![CDATA[# TheiaProk Report]]\u003e\u003c/Text\u003e\u003cTable type=\"application/vnd.datapane.table+html\" src=\"ref://e10910ec70\"/\u003e\u003cTable type=\"application/vnd.datapane.table+html\" src=\"ref://8e60714c63\"/\u003e\u003cTable type=\"application/vnd.datapane.table+html\" src=\"ref://d84f1ccbd1\"/\u003e\u003c/View\u003e", "assets": {"e10910ec70": {"src": "data:application/vnd.datapane.table+html;base64,PHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8dGg+PC90aD4KICAgICAgPHRoPlNhbXBsZTwvdGg+CiAgICAgIDx0aD5UYXhvbiBJRDwvdGg+CiAgICA8L3RyPgogIDwvdGhlYWQ+CiAgPHRib2R5PgogICAgPHRyPgogICAgICA8dGg+MDwvdGg+CiAgICAgIDx0ZD5UZXN0X1NhbXBsZV8wMTwvdGQ+CiAgICAgIDx0ZD5BY2luZXRvYmFjdGVyIGJhdW1hbm5paTwvdGQ+CiAgICA8L3RyPgogIDwvdGJvZHk+CjwvdGFibGU+", "hash": "e10910ec70", "size": 400, "mime": "application/vnd.datapane.table+html"}, "8e60714c63": {"src": "data:application/vnd.datapane.table+html;base64,PHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8dGg+PC90aD4KICAgICAgPHRoPlNjaGVtYTwvdGg+CiAgICAgIDx0aD5TVDwvdGg+CiAgICAgIDx0aD5Qcm9maWxlPC90aD4KICAgIDwvdHI+CiAgPC90aGVhZD4KICA8dGJvZHk+CiAgICA8dHI+CiAgICAgIDx0aD4wPC90aD4KICAgICAgPHRkPmFiYXVtYW5uaWlfMjwvdGQ+CiAgICAgIDx0ZD5TVDI8L3RkPgogICAgICA8dGQ+W1Bhc19jcG42MCgyKSxQYXNfZnVzQSgyKSxQYXNfZ2x0QSgyKSxQYXNfcHlyRygyKSxQYXNfcmVjQSgyKSxQYXNfcnBsQigyKSxQYXNfcnBvQigyKV08L3RkPgogICAgPC90cj4KICA8L3Rib2R5Pgo8L3RhYmxlPg==", "hash": "8e60714c63", "size": 532, "mime": "application/vnd.datapane.table+html"}, "d84f1ccbd1": {"src": "data:application/vnd.datapane.table+html;base64,PHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8dGg+PC90aD4KICAgICAgPHRoPkFudGltaWNyb2JpYWxzPC90aD4KICAgICAgPHRoPkFNUiBHZW5lczwvdGg+CiAgICA8L3RyPgogIDwvdGhlYWQ+CiAgPHRib2R5PgogICAgPHRyPgogICAgICA8dGg+MDwvdGg+CiAgICAgIDx0ZD5bQU1JTk9HTFlDT1NJREUsQkVUQS1MQUNUQU0sRUZGTFVYLEZPU0ZPTVlDSU4sUVVJTk9MT05FLFNVTEZPTkFNSURFLFRFVFJBQ1lDTElORV08L3RkPgogICAgICA8dGQ+W2d5ckFfUzgxTCxwYXJDX1M4NEwsYW50KDMnJyktSUlhLGFkZUMsYW12QSxhYmFGLGJsYU9YQS02Nix0ZXQoQiksYXBoKDYpLUlkLGFwaCgzJycpLUliLGJsYUFEQyxibGFPWEEtMjMsc3VsMl08L3RkPgogICAgPC90cj4KICA8L3Rib2R5Pgo8L3RhYmxlPg==", "hash": "d84f1ccbd1", "size": 620, "mime": "application/vnd.datapane.table+html"}}} }};
+  }
+</script>
+<script type="module">
+  import { mountReport } from "https://datapane-cdn.com/v0.16.2/report/index.es.js";
+  mountReport(window.reportProps);
+</script>
+  </head>
+  <body>
+      <div id="report"></div>
+  </body>
+</html>
