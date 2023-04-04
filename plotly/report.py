@@ -41,6 +41,14 @@ fig = make_subplots(rows=8, cols=3, vertical_spacing=0.1,
                         [None, None, None]],
                     subplot_titles=("","Summary Table", "MLST", "Hits Table"))
 
+# define size as A4 in pixels for PDF generation
+# TODO: Rotate for portrait mode
+fig.update_layout(
+    autosize=False,
+    width=2480,
+    height=3508
+)
+
  # intro text
 summary = ('Add blirp about <a href="https://github.com/theiagen/public_health_bacterial_genomics/">TheiaProk</a> here.<br> '
             ' <br>'
@@ -79,4 +87,5 @@ fig.update_layout(title={'text': "<b>TheiaProk Report</b>",
                         'yanchor': 'top',
                         'font': {'size': 24, 'color': '#196db5'}})
 fig.update_layout(height=1080, template='ggplot2', plot_bgcolor='rgba(0,0,0,0)')
-fig.write_html("plotly_report.html", include_plotlyjs="cdn")
+#fig.write_html("plotly_report.html", include_plotlyjs="cdn")
+fig.write_image("plotly_report.pdf")
