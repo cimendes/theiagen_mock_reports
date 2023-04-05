@@ -133,7 +133,7 @@ class PDF(FPDF):
         line_height = self.font_size * 2.5
 
         col_width = get_col_widths()
-        self.set_font(size=title_size)
+        self.set_font('helvetica',size=title_size)
 
         # Get starting position of x
         # Determin width of table to get x starting point for centred table
@@ -164,7 +164,7 @@ class PDF(FPDF):
             self.multi_cell(0, line_height, title, border=0, align='j', ln=3, max_line_height=self.font_size)
             self.ln(line_height) # move cursor back to the left margin
 
-        self.set_font(size=data_size)
+        self.set_font('helvetica',size=data_size)
         # add header
         y1 = self.get_y()
         if x_start:
